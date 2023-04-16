@@ -214,7 +214,7 @@ aside nav{
   }
   
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
   html{
     text-align: center;
     width: 700px;
