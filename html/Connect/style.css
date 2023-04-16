@@ -1,0 +1,29 @@
+html{
+    background-color:rgb(171, 242, 242);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body{
+    margin-top: 150px;
+    text-align: center;
+}
+body h1{
+    font-size: 30px;
+}
+body p{
+    font-size: 15px;
+}
+img{
+    display:inline-block;
+    width:100px;
+    margin:50px;
+    height:100px;
+    margin:30px;
+    background:gold;
+  }
+  #box1{
+    animation:3s linear infinite rotation1;
+  }
+  @keyframes rotation1{
+    0%{ transform:rotate(0);}
+    100%{ transform:rotate(360deg); }
+  }

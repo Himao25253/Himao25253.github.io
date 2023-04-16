@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="JA">
+    <head>
+        <meta charset="UTF-8">
+        <title>NukapasuBigWeb</title>
+        <link rel="stylesheet" href="html5reset-1.6.1.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <header>
+        <a class="title">NukapasuBigWeb</a>
+        <div class="container">
+            <button class="hamburger-menu">
+              <span class="hamburger-menu__line"></span>
+              <span class="hamburger-menu__line"></span>
+              <span class="hamburger-menu__line"></span>
+            </button>
+            <nav class="nav">
+              <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about/about.html">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="Connect/connect.html">要望</a></li>
+              </ul>
+            </nav>
+            <script>
+                var hamburger = document.querySelector('.hamburger-menu');
+                var nav = document.querySelector('nav');
+
+                hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                if (nav) {
+                    nav.classList.toggle('active');
+                }
+                });
+            </script>
+          </div>
+        <div class="box">
+            <ul class="list">
+                <li class="l1"><a href="#">Home</a><p class="hp">ホーム</p></li>
+                <li class="l2"><a href="html/about/about.html">About</a><p class="hp">アバウト</p></li>
+                <li class="l3"><a href="html/news.html">News</a><p class="hp">ニュース</p></li>
+                <li class="l4"><a href="html/member/member.html">Member</a><p class="hp">メンバー</p></li>
+                <li class="l5"><a href="#" id="link">Clear</a><p class="hp">クリア</p></li>
+            </ul>
+        </div>
+    </header>
+
+    <img src="header.png" class="topimg">
+
+    <body>
+        <div class="yoko">
+            <main class="sm">
+                <h1 class="nh">お知らせ</h1>
+                <p>サイトがリニューアルされたよ！</p>
+                <br>
+                <h1>Member</h1>
+                <p>BANされている人などが分かるよ</p>
+                <iframe height="500" width="600" class="gs" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtFD1Tu7OfGi7nXdx3WO4KQtJIHMPvbElyjISbHQUEll2sgPvJpeCwZAckcEkKgcVzdvHMRh0KxTLL/pubhtml?widget=true&amp;headers=false"></iframe>
+
+            </main>
+            <aside class="sa">
+                <nav>
+                    <a class="side">カテゴリー</a>
+                    <ul>
+                        <li><a class="cate" href="html/news.html">News</a></li>
+                        <li><a class="cate" href="html/member/member.html">Member</a></li>
+                    </ul>
+                    <iframe src="https://discordapp.com/widget?id=998099105471529052&theme=light" class="iframe" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </nav>
+            </aside>
+        </div>
+    </body>
+
+<script>
+// JavaScript
+const link = document.getElementById("link");
+const sa = document.querySelector(".sa");
+const sm = document.querySelector(".sm");
+let isHidden = false;
+
+link.addEventListener("click", function(event) {
+  event.preventDefault(); // リンクのデフォルトの動作をキャンセルする
+
+  if (isHidden) {
+    sa.style.display = "block"; // sa要素を表示にする
+    sm.style.margin = "auto 30px 0" /* 変更 */
+    sm.style.width = "1240px";
+    isHidden = false;
+  } else {
+    sa.style.display = "none"; // sa要素を非表示にする
+    sm.style.margin = "0 auto 0"
+    sm.style.width = "1240px";
+    isHidden = true;
+  }
+});
+
+</script>
+
+</html>
