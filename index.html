@@ -42,7 +42,6 @@
                 <li class="l2"><a href="html/about/about.html">About</a><p class="hp">アバウト</p></li>
                 <li class="l3"><a href="html/news.html">News</a><p class="hp">ニュース</p></li>
                 <li class="l4"><a href="html/member/member.html">Member</a><p class="hp">メンバー</p></li>
-                <li class="l5"><a href="#" id="link">Clear</a><p class="hp">クリア</p></li>
             </ul>
         </div>
     </header>
@@ -72,30 +71,4 @@
             </aside>
         </div>
     </body>
-
-<script>
-// JavaScript
-const link = document.getElementById("link");
-const sa = document.querySelector(".sa");
-const sm = document.querySelector(".sm");
-let isHidden = false;
-
-link.addEventListener("click", function(event) {
-  event.preventDefault(); // リンクのデフォルトの動作をキャンセルする
-
-  if (isHidden) {
-    sa.style.display = "block"; // sa要素を表示にする
-    sm.style.margin = "auto 30px 0" /* 変更 */
-    sm.style.width = "1240px";
-    isHidden = false;
-  } else {
-    sa.style.display = "none"; // sa要素を非表示にする
-    sm.style.margin = "0 auto 0"
-    sm.style.width = "1240px";
-    isHidden = true;
-  }
-});
-
-</script>
-
 </html>
