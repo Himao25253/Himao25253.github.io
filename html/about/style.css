@@ -126,6 +126,9 @@ html{
   .container{
     display: none;
   }
+.nukapasu{
+  margin: 10px;
+}
   
   @media (min-width: 2000px){
     .sa{
@@ -303,4 +306,5 @@ html{
       opacity: 1;
     }
   }
+
     
