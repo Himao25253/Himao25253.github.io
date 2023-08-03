@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="JA">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="../../html5reset-1.6.1.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>n!bot versions</title>
+    </head>
+
+    <body>
+        <main>
+            <div>
+                <h1 class="posttitle">n!bot Versions</h1>
+                <ul class="post">
+                    <hr>
+                    <li>
+                        <a class="posttitles">Beta Ver.1.3.1</a>
+                        <p class="overview">以前からあったバグを修正したよ</p>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="posttitles">Beta Ver.1.3.0</a>
+                        <p class="overview">/userinfoの自己紹介機(マイクラ参加勢限定)のや<br>
+                        /mcplsroleでの自己紹介の編集ができるようになったよ<br>
+                        /plsroleでmcmemberからmemberに変更して<br>
+                        /mcplsroleでmcmemberを取得できるようになったよ</p>
+                        <img src="./img/userinfo.png" width="300px" class="postimg">
+                        <img src="./img/mcplsrole.png" width="300px" class="postimg">
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                            const postimgs = document.querySelectorAll('.postimg');
+
+                            postimgs.forEach(function(postimg) {
+                                postimg.addEventListener('click', function() {
+                                // Postimgの元のサイズの画像URLを取得
+                                const originalImageUrl = postimg.getAttribute('src').replace('/th/', '/img/');
+
+                                // 新しいウィンドウを開いて元のサイズの画像を表示
+                                window.open(originalImageUrl, '_blank');
+                                });
+                            });
+                            });
+                        </script>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="posttitles">Ver.1.3.0以来のバージョン</a>
+                        <p class="overview">いちいち書くのめんどいからスクショ</p>
+                        <img src="./img/1.3.0since.png" width="100px" class="postimg">
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                            const postimgs = document.querySelectorAll('.postimg');
+
+                            postimgs.forEach(function(postimg) {
+                                postimg.addEventListener('click', function() {
+                                // Postimgの元のサイズの画像URLを取得
+                                const originalImageUrl = postimg.getAttribute('src').replace('/th/', '/img/');
+
+                                // 新しいウィンドウを開いて元のサイズの画像を表示
+                                window.open(originalImageUrl, '_blank');
+                                });
+                            });
+                            });
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>

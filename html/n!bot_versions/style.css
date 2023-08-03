@@ -1,0 +1,56 @@
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  li{
+    list-style: none;
+  }
+  .posttitle {
+    margin-left: 55px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  .post {
+    margin-left: 55px;
+  }
+  .post a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .posttitles .overview {
+    display: inline-block;
+  }
+  /* 余白を追加してアイコンとタイトルを調整 */
+  .post li {
+    margin-bottom: 10px;
+  }
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .fbox{
+    text-align: right;
+  }
+  .fbox li{
+    list-style: none;
+    margin-right: 10px;
+  }
+  .fbox a{
+    text-decoration: none;
+    color: black;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .link{
+    color: rgb(70, 126, 255);
+  }
+  .postimg{
+    display: inline-flex;
+  }
