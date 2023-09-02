@@ -1,0 +1,38 @@
+html{
+    background-color:rgb(234, 234, 234);
+}
+header div{
+    background-color: rgb(254, 198, 142);
+    padding-bottom: 150px;
+}
+.ico{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+    background-color:rgb(234, 234, 234);
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+}
+.main{
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.main h1{
+    font-size: 25px;
+}
+.nameunder{
+    color: rgb(50, 50, 50);
+    margin-top: 5px;
+}
+.main p{
+    margin-top: 10px;
+}
+.main p a{
+    color: rgb(92, 83, 255);
+}
