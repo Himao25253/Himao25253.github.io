@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const spans = document.querySelectorAll(".Hi span");
+                    // マウスカーソルの反応を無効にする
+                    spans.forEach((span) => {
+                        span.addEventListener("mouseenter", () => {
+                            span.style.pointerEvents = "none";
+                        });
+                    });
+                setTimeout(function () {
+                    const spans = document.querySelectorAll(".Hi span");
+                    let currentIndex = 0;
+
+                    function showNextLine() {
+                        if (currentIndex < spans.length) {
+                            spans[currentIndex].classList.add("show-underline");
+                            currentIndex++;
+                        }
+                    }
+
+                    // 最初の行を表示
+                    showNextLine();
+
+                    // 5秒ごとに次の行を表示
+                    const intervalId = setInterval(showNextLine, 1000);
+
+                    // 全ての行が表示されたらインターバルをクリア
+                    if (currentIndex === spans.length) {
+                        clearInterval(intervalId);
+                    }
+                }, 2000); // 3秒後に実行
+            });
+
+        </script>  
+    </head>
+
+    <body>
+        <h1 class="seisiki">正式リリースは9月28日です</h1>
+        <header>
+            <img src="./img/n!bot icodsad.png">
+            <h1>N!BOT</h1>
+                <a class="atd" href="https://discord.com/api/oauth2/authorize?client_id=1143196911680110612&permissions=8&scope=bot%20applications.commands">
+                    <img class="atdimg" src="./img/wiconizer-discord-icon.svg">
+                    Add to Discord
+                </a>
+        </header>
+        <hr>
+        <div>
+            <h1 class="Hi">
+                <span>コマンドだけで完結</span>
+                <span class="rolebot">役職Bot</span>
+                <span class="for">for Discord</span>
+            </h1>
+            <p class="gaiyo">
+                役職Botの機能のみならず「/userinfo user:情報を見たい人」で<br>
+                その人の自己紹介やそのサーバーでのロールなどが確認出来たり<br>
+                マインクラフトのユーザー、マインクラフトのサーバーの状況<br>
+                などが確認できます
+            </p>
+            <a class="atdbtn" href="https://discord.com/api/oauth2/authorize?client_id=1143196911680110612&permissions=8&scope=bot%20applications.commands">
+                <img class="atdimg" src="./img/wiconizer-discord-icon.svg">
+                Add to Discord
+            </a>
+            <a class="lgssbtn" href="https://discord.gg/cXBMxSWeY2">
+                <img class="atdimg" src="./img/servericon.png">
+                Let's Go Support Server
+            </a>
+        </div>   
+        <div class="betu1">
+            <hr>
+            <h2 class="help l150">N!BOTで何が出来るの？</h2>
+            <p class="gaiyo">
+                全サーバー共通の自己紹介や、マイクラサーバーの状況<br>
+                マインクラフトのユーザーが存在するかなどが分かるよ！<br>
+                目玉機能でもあるロール取得通知が運営激推し<br>
+                /plsrole,/mcplsroleを使用してロールを取得した人がいたら<br>
+                特定のチャンネルに誰が取得したかなどが分かって<br>
+                面倒な事があった時に助かるかも。。。。<br>
+                詳しい機能はBotのコマンドを見てね
+            </p>
+        </div>
+        <div class="betu2">
+            <h2 class="help r150">便利な箇所は？</h2>
+            <p class="gaiyomigi">
+                コマンドのみで完結出来て、コマンドも使いやすい！<br>
+                あまりラグが無いからラグなどでストレスを感じない！
+            </p>
+        </div>
+        <div class="betu3">
+            <h2>要するに、使ってみれば<br>その便利さが分かります</h2>
+            <p class="whosetting">設定方法は<a class="kotira" href="./setting.html">こちら</a></p>
+            <div class="howahowa"><a class="matdbtn" href="https://discord.com/api/oauth2/authorize?client_id=1143196911680110612&permissions=8&scope=bot%20applications.commands">
+                <img class="atdimg" src="./img/wiconizer-discord-icon.svg">
+                Add to Discord
+            </a></div>
+        </div>
+        <footer>
+            <h1 class="l150">N!BOT</h1>
+            <p class="l150">N!BOT Home Page</p>
+            <a class="l150" href="./index.html">Click ME</a>
+            <p class="l150">Support Discord Server</p>
+            <a class="l150" href="https://discord.gg/cXBMxSWeY2">https://discord.gg/cXBMxSWeY2</a>
+            <p class="l150">&copy;2023 N!BOT</p>
+        </footer>
+    </body>
+</html>
