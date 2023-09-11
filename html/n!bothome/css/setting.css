@@ -7,9 +7,6 @@ header{
     margin: 30px;
     display: flex;
     margin: 30px 150px 30px;
-    position: fixed; /* ヘッダーを固定する */
-    top: 0; /* 上部から配置の基準位置を決める */
-    left: 0; /* 左から配置の基準位置を決める */
 }
 header h1{
     color: white;
